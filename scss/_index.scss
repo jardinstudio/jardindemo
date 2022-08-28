@@ -1,0 +1,73 @@
+.container-feedback {
+  .content-wapper1 {
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1.2;
+      }
+    }
+  }
+}
+
+.contact-container {
+  background-color: #cccccc54;
+  .item {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 0.5px;
+      left: -2rem;
+      bottom: 0;
+      background: #000;
+      display: none;
+    }
+
+    @include Responsive(XS) {
+      &::after {
+        display: block;
+      }
+    }
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  i {
+    font-size: 2rem;
+    animation: wiggle 6s infinite;
+  }
+}
+
+@keyframes wiggle {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.8);
+  }
+  15% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.2) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.2) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.2) rotate(0);
+    color: rgb(57, 158, 13);
+  }
+}

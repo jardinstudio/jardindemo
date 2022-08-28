@@ -118,6 +118,7 @@ ul li {
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .bg-img {
@@ -1007,7 +1008,6 @@ input:required {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: blue;
   opacity: 0;
   visibility: hidden;
   -webkit-transition-duration: 500ms;
@@ -1061,7 +1061,7 @@ input:required {
 
 .instagram-gallery-single-item:hover .instagram-hover-content .zoom-img {
   margin-top: 0;
-  opacity: 1;
+  opacity: 100;
 }
 
 /* :: 11.0 About CSS */
@@ -1236,6 +1236,19 @@ input:required {
 .why-choose-us-content:hover p, .why-choose-us-content:focus h4,
 .why-choose-us-content:focus p {
   color: #ffffff;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* :: 12.0 Breadcrumb CSS */
@@ -2105,7 +2118,6 @@ input:required {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
   z-index: 10;
@@ -2244,18 +2256,6 @@ input:required {
   position: relative;
 }
 
-.content-container-price .content::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 5px;
-  background-color: #ab5809;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 .content-container-price .content .card-price-photo {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2384,5 +2384,122 @@ input:required {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   padding: 0.5rem 0;
+}
+
+.container-feedback .content-wapper1 .image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1.2;
+}
+
+.contact-container {
+  background-color: #cccccc54;
+}
+
+.contact-container .item {
+  position: relative;
+}
+
+.contact-container .item::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 0.5px;
+  left: -2rem;
+  bottom: 0;
+  background: #000;
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .contact-container .item::after {
+    display: block;
+  }
+}
+
+.contact-container h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.contact-container i {
+  font-size: 2rem;
+  -webkit-animation: wiggle 6s infinite;
+          animation: wiggle 6s infinite;
+}
+
+@-webkit-keyframes wiggle {
+  5%,
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  15% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  20% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+            transform: scale(1.2) rotate(-5deg);
+  }
+  25% {
+    -webkit-transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) rotate(-3deg);
+            transform: scale(1.2) rotate(-3deg);
+  }
+  35% {
+    -webkit-transform: scale(1.2) rotate(2deg);
+            transform: scale(1.2) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: scale(1.2) rotate(0);
+            transform: scale(1.2) rotate(0);
+    color: #399e0d;
+  }
+}
+
+@keyframes wiggle {
+  5%,
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  15% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  20% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+            transform: scale(1.2) rotate(-5deg);
+  }
+  25% {
+    -webkit-transform: scale(1.2) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
+  }
+  30% {
+    -webkit-transform: scale(1.2) rotate(-3deg);
+            transform: scale(1.2) rotate(-3deg);
+  }
+  35% {
+    -webkit-transform: scale(1.2) rotate(2deg);
+            transform: scale(1.2) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: scale(1.2) rotate(0);
+            transform: scale(1.2) rotate(0);
+    color: #399e0d;
+  }
 }
 /*# sourceMappingURL=style.css.map */

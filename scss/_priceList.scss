@@ -32,17 +32,6 @@ $card-color: #ab5809;
 .content-container-price {
   .content {
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 5px;
-      background-color: #ab5809;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
     .card-price-photo {
       margin-left: 1rem;
       margin-right: 1rem;
