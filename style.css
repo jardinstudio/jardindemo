@@ -769,10 +769,10 @@ input:required {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(5, 41, 14, 0.329);
 }
 .main-header-area.sticky {
-  background-color: #000000;
+  background-color: rgba(5, 41, 14, 0.726);
 }
 
 .classy-navbar-toggler .navbarToggler span {
@@ -2097,27 +2097,7 @@ h2.title-album {
   text-transform: capitalize;
 }
 
-h2.title-album::before {
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 60px;
-  height: 35px;
-  background-image: url(https://bffmedia.vn/wp-content/themes/flatsome-child/img/heading_left.png);
-  left: 0;
-}
 
-h2.title-album::after {
-  content: "";
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 60px;
-    height: 35px;
-    background-image: url(https://bffmedia.vn/wp-content/themes/flatsome-child/img/heading_right.png);
-    right: 0;
-}
 
 img.img-carousel {
   width: 100%;
@@ -2224,4 +2204,3 @@ div.owl-prev, div.owl-next {
   color: #fff;
   font-size: 2.2rem;
 }
-
