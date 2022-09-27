@@ -647,9 +647,19 @@ input:required {
 .classy-nav-container .classy-navbar .classynav ul li a:focus {
   color: #fc6060;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 980px;
+  }
   .classy-nav-container .classy-navbar .classynav ul li a {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2070,6 +2080,34 @@ input:required {
 .contact-area .contact-info a {
   font-size: 16px;
 }
+
+.price {
+  width: 100%;
+  overflow: hidden;
+}
+
+.price .table {
+  margin-top: 20px;
+}
+
+.card-photo .card-photo__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.card-photo .card-photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+/* media querry */
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact-area .contact-info a {
     font-size: 14px;
@@ -2161,6 +2199,11 @@ div.owl-next {
 
 .footer-area h3 {
   color: #fc5f61;
+}
+
+.footer-area .info,
+.services {
+  font-size: 14px;
 }
 
 .footer-area .map-wapper .map {

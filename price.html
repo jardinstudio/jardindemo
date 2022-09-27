@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <div class="price">
+      <div class="top-search-area">
+        <div
+          class="modal fade"
+          id="searchModal"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <!-- Close -->
+                <button
+                  type="button"
+                  class="btn close-btn"
+                  data-dismiss="modal"
+                >
+                  <i class="ti-close"></i>
+                </button>
+                <!-- Form -->
+                <form action="index.html" method="post">
+                  <input
+                    type="search"
+                    name="top-search-bar"
+                    class="form-control"
+                    placeholder="Search and hit enter..."
+                  />
+                  <button type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Area Start -->
+      <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+          <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+              <!-- Classy Menu -->
+              <nav class="classy-navbar justify-content-between" id="alimeNav">
+                <!-- Logo -->
+                <a class="nav-brand" href="./index.html"
+                  ><img src="./img/core-img/Logo.png" alt="logo"
+                /></a>
+
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                  <span class="navbarToggler"
+                    ><span></span><span></span><span></span
+                  ></span>
+                </div>
+
+                <!-- Menu -->
+                <div class="classy-menu">
+                  <!-- Menu Close Button -->
+                  <div class="classycloseIcon">
+                    <div class="cross-wrap">
+                      <span class="top"></span><span class="bottom"></span>
+                    </div>
+                  </div>
+                  <!-- Nav Start -->
+                  <div class="classynav">
+                    <ul id="nav">
+                      <li>
+                        <a href="./index.html">Trang Chủ</a>
+                      </li>
+                      <li><a href="./about.html">Giới Thiệu</a></li>
+                      <li><a href="./about.html">Chương Trình Ưu Đãi</a></li>
+                      <li><a href="./about.html">Gói Chụp</a></li>
+                      <li><a href="./gallery.html">Album Ảnh</a></li>
+                      <li class="active"><a href="./price.html">báo giá</a></li>
+                      <li><a href="./contact.html">Liên Hệ</a></li>
+                    </ul>
+
+                    <!-- Search Icon -->
+                    <div
+                      class="search-icon"
+                      data-toggle="modal"
+                      data-target="#searchModal"
+                    >
+                      <i class="ti-search"></i>
+                    </div>
+                  </div>
+                  <!-- Nav End -->
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="banner-header">
+        <div class="container h-100">
+          <div class="col-12 h-100">
+            <div
+              class="breadcrumb-container h-100 d-flex justify-content-center flex-column"
+            >
+              <h2 class="text-uppercase text-white">Bảng giá chụp kỷ yếu</h2>
+              <ol class="breadcrumb bg-transparent ps-0">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-white">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-white">Bảng giá chụp kỷ yếu</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Bảng giá chụp kỷ yếu Hà Nội
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table">
+        <h4 class="text-center">Bảng giá chụp ảnh kỷ yếu tại Jardn Yearbook</h4>
+
+        <div class="card-photo">
+          <div class="card-photo__list">
+            <div class="card-photo__item">
+              <img src="./img/price/309k.jpg" alt="" class="card-photo__img" />
+              <img src="./img/price/349k.jpg" alt="" class="card-photo__img" />
+              <img src="./img/price/449k.jpg" alt="" class="card-photo__img" />
+              <img src="./img/price/459k.jpg" alt="" class="card-photo__img" />
+            </div>
+            <div class="card-photo__item">
+              <img src="./img/price/499k.jpg" alt="" class="card-photo__img" />
+              <img src="./img/price/529k.jpg" alt="" class="card-photo__img" />
+              <img src="./img/price/589k.jpg" alt="" class="card-photo__img" />
+              <img src="./img/price/699k.jpg" alt="" class="card-photo__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="info">
+                <h3>JarDin Studio</h3>
+                <div class="address mt-2">
+                  <i class="fa-solid fa-location-dot mr-2"></i>
+                  <span
+                    >Địa chỉ: Lô 7B, Ngõ 80, Hoàng Ngân, Trung Hòa, Cầu Giấy, Hà
+                    Nội</span
+                  >
+                </div>
+                <div class="phone mt-2">
+                  <i class="fa-solid fa-phone mr-2"></i>
+                  <span>0366665888 - 0588885666</span>
+                </div>
+                <div class="email mt-2">
+                  <i class="fa-solid fa-envelope mr-2"></i>
+                  <span>kyyeu@bffmedia.vn</span>
+                </div>
+                <div class="website mt-2">
+                  <i class="fa-solid fa-earth-americas mr-2"></i>
+                  <span>www.bffmedia.vn</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-2 mt-lg-0">
+              <div class="services">
+                <h3>Dịch vụ</h3>
+                <ul>
+                  <li class="mt-2">Chụp ảnh kỷ yếu</li>
+                  <li class="mt-2">Bảng giá chụp kỷ yếu</li>
+                  <li class="mt-2">Thuê trang phục kỷ yếu</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-2 mt-lg-0">
+              <div class="fanpage">
+                <h3>Fanpage</h3>
+                <div class="page-contaier">
+                  <div class="row">
+                    <div class="col-4">
+                      <img
+                        width="100%"
+                        src="https://scontent.xx.fbcdn.net/v/t1.6435-1/120031256_1738085749700493_2305774289354155030_n.jpg?stp=c4.5.50.49a_cp0_dst-jpg_p56x56&_nc_cat=100&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=RXBpilWWJv4AX_ehXsi&_nc_ht=scontent.xx&edm=ADwHzz8EAAAA&oh=00_AT_Xq2DiL_QsN76JDGt17uetcYRlEgBafnjefW92ojnepQ&oe=631FF03C"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h5 class="mb-0">Jardin</h5>
+                      <p class="mb-0">13241 lượt thích</p>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-12">
+                      <div class="footer-page">
+                        <a href="#">
+                          <i class="fa-brands fa-facebook"></i>
+                          <span>Thích trang</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-2 mt-lg-0">
+              <div class="map-wapper">
+                <h3>Bản đồ</h3>
+                <div class="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.984222602975!2d105.77302281626292!3d21.033317285996127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b69ef46eb9%3A0x8ec4dd886f9e8584!2zTmcuIDY2IFAuIE5ndXnhu4VuIEhvw6BuZywgTWFpIEThu4tjaCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1660490884891!5m2!1svi!2s"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+  </body>
+</html>
